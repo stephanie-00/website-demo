@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATH: Personalized AI-Based Tracking Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <section id="loginSection" class="login-section">
+        <div class="login-box">
+            <h2>Welcome to PATH</h2>
+            <p>Please log in to get personalized course recommendations.</p>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Enter username" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Interest Setup Section -->
+    <section id="interestSetup" class="interest-setup" style="display: none;">
+        <div class="interest-box">
+            <h2>Select Your Interests</h2>
+            <form id="interestForm">
+                <label for="interests">Choose your interests (Hold Ctrl or Command to select multiple):</label>
+                <select id="interests" name="interests" multiple required>
+                    <option value="Data Science">Data Science</option>
+                    <option value="AI/ML">AI/ML</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Blockchain">Blockchain</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="UX/UI Design">UX/UI Design</option>
+                </select>
+                <button type="submit">Save Interests</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard" style="display: none;">
+        <div class="dashboard-box">
+            <h2>Personalized Course Recommendations</h2>
+            <div id="recommendations-list" class="recommendations-list"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
